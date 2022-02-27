@@ -4,6 +4,17 @@
     margin-bottom: 16px;
     padding: 0 8px;
 }
+.homeee{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/merc2.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    background-attachment: fixed ;
+    display: flex;
+    align-items: center;
+}
 
 .card{
   /*  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
