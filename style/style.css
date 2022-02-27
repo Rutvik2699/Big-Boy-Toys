@@ -10,10 +10,7 @@
     font-family: 'Poppins', sans-serif;  
 }
 
-:root{
-    --text-color:#000000;
-    --main-color:#dd0000;
-}
+
 
 section{
     padding: 50px 10%;
@@ -153,9 +150,7 @@ header{
     padding-left: 12px;
     color:#dd0000;
 }
-.stars .bx{
-    color:#dd0000;
-}
+
 
 
 .box .buybtn{
