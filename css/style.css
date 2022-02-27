@@ -383,7 +383,7 @@ header{
         order: 2;
     }
 }
-@media(max-width:491px){
+@media(max-width:501px){
     
     .navbar a{
         color: #edecea;
