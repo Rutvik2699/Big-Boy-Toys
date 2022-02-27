@@ -1,0 +1,431 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;  
+}
+
+:root{
+    --text-color:#000000;
+    --main-color:#dd0000;
+}
+
+section{
+    padding: 50px 10%;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0%;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 100px;
+    background: #000000;
+}
+
+.logo{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #dd0000;
+
+}
+.logo span{
+    color: #dd0000;
+
+}
+
+.navbar{
+    position: realtive;
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: white;
+
+}
+.navbar a:hover{
+    color: #dd0000;
+}
+
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/hyundai.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    background-attachment: fixed ;
+    display: flex;
+    align-items: center;
+}
+
+.home-text h1{
+    font-size: 2.7rem;
+    color: #edecea;
+}
+
+.home-text p{
+    font-size: 1rem;
+    margin: 0.4rem 0 1.8rem;
+    color: #edecea;
+}
+.btn{
+    padding: 10px 14px;
+    background-color: #dd0000;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #edecea;
+}
+
+.btn:hover{
+    background-color: #ff3c3c;
+}
+
+.heading {
+    text-align: center;
+  }
+.heading span {
+    font-size: 14px;
+    font-weight: 500;
+    color:#dd0000;
+    text-transform: uppercase;
+  }
+.shop-container,
+.new-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+.box {
+    position: relative;
+    width: absolute;
+    box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.1);
+    border-radius: 44px 4px 4px 4px;
+  }
+.box .box-img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 44px 44px 0 0;
+  }
+.box .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+.box .box-img img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+.title-price{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+
+}
+
+.title-price h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.box span{
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 12px;
+    color:#dd0000;
+}
+.stars .bx{
+    color:#dd0000;
+}
+
+
+.box .buybtn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 7px;
+    font-size: 15px;
+    color: #edecea;
+    border-radius: 4px 0 4px 0;
+    background:#dd0000;
+}
+.box .bx-cart:hover{
+    background: #ff3c3c;
+}
+
+.new-container .box{
+    border-radius: 4px;
+}
+
+.new-container .box .box-img{
+    border-radius: 4px;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.about-img img{
+    width: 80%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.about-text span{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #dd0000;
+}
+
+.about-text p{
+    font-size: 1rem;
+    margin: 0.5rem 0 1.4rem ;
+}
+
+.brand-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.brand-container img{
+    width: 100px;
+   
+
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/road.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+
+}
+
+.newsletter h2{
+    color: #fff;
+}
+
+.news-box{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.news-box input{
+    width: 260px;
+    height: 44px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: #fff;
+}
+
+.news-box .btn{
+    height: 44px;
+    padding: 11px;
+    border-radius: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,auto));
+    gap: 1rem;
+}
+.footer-box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.footer-box span{
+    color: #dd0000;
+
+}
+.footer-box p{
+    font-size: 00.938rem;
+    margin-bottom: 10px;
+}
+.social{
+    display: flex;
+    align-items: center;
+
+}
+
+.social a{
+    font-size: 40px;
+    margin-left: 10px;
+    color: #000000;
+}
+.social a:hover{
+    color:#dd0000;
+}
+
+.footer-box h3{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer-box li a{
+    color: #000000;
+}
+
+.footer-box li a:hover{
+    color:#dd0000;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info span{
+    color: #000000;
+}
+
+.copyright{
+    padding: 30px;
+    text-align: center;
+}
+
+/*Responsive Design*/
+
+@media(max-width:991px){
+    .navbar a{
+        color: #edecea;
+    }
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+
+}
+
+
+@media(max-width:881px){
+    .navbar a{
+        color: #edecea;
+    }
+    .home-text h1{
+        font-size: 2rem;
+    }
+    .shop-container,.new-container{
+        grid-template-columns: repeat(auto-fit, minmax(218px, auto));
+    }
+}
+
+@media(max-width:768px){
+
+    .navbar a{
+        color: #edecea;
+    }
+    header{
+        padding: 11px 4%;
+    }
+
+ 
+    header .navbar a{
+       font-size: 1rem;
+    }
+
+    .navbar a{
+        font-size: 1rem;
+        padding: 13px;
+        display: block;
+
+    }
+    .navbar.active{
+        top: 100%;
+    }
+    .navbar a:hover{
+        color: #fff;
+        background: #dd0000;
+        
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+        text-align:center ;
+
+    }
+    .about-img{
+        padding-top: 1rem;
+        order: 2;
+    }
+}
+@media(max-width:491px){
+    
+    .navbar a{
+        color: #edecea;
+    }
+    .home-text h1{
+        font-size: 1.7rem;
+    }
+    .shop-container, .new-container{
+        grid-template-columns: repeat(auto-fit, minmax(218px, auto));
+    }
+    .box .box-img{
+        height: 300px;
+    }
+
+    .news-box input{
+        width: 180px;
+    }
+    .about-text h2{
+        font-size: 1.2rem;
+    }
+    .footer{
+        text-align: center;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
